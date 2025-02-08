@@ -27,11 +27,23 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:fontFamily="@font/chakrapetchbold"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/image_back"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian: 30s"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/chakrapetchbold"
+            app:layout_constraintTop_toBottomOf="@id/cpt_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/text_question"
@@ -42,13 +54,13 @@
             android:fontFamily="@font/chakrapetchbold"
             android:text="question"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="20dp"
             android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/timerTextView" />
 
         <ImageView
             android:id="@+id/image_back"
